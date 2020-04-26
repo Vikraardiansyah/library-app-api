@@ -104,4 +104,16 @@ Respon body if token expired
 | CRUD | CREATE | READ | UPDATE | DELETE
 | /books | Create new books | List book | Description Update | Delete books
 
+# Packages
+-express
+-mysql
+-body-parser
+-nodemon
+-morgan
+-multer
+-cors
+-jsonwebtoken
+-bcrypt
+-dotenv
+
 
