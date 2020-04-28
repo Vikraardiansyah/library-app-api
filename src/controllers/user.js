@@ -28,7 +28,6 @@ module.exports = {
     userPutBooks: async function(request, response){
         try {
             const setData = request.body
-            console.log(setData.id_status)
             const id = request.params.id
             const result = await userModels.userPutBooks(setData, id)
 

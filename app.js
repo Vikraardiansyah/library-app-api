@@ -1,7 +1,6 @@
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
-// const cors = require('cors')
 const morgan = require('morgan')
 const routeNavigator = require('./src/index')
 
@@ -11,7 +10,6 @@ const server = app.listen(3000, "127.0.0.1", function(){
 
     console.log("You're connected at "+host+":"+port)
 })
-// app.use(cors())
 app.use(morgan("dev"))
 app.use(bodyParser.urlencoded({extended: true}))
 app.use('/', routeNavigator)
